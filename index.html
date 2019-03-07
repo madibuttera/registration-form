@@ -13,20 +13,51 @@
 <body>
 
   <section>
+    <div>
+      <div>
+        <h1>Want to go to Mars?</h1>
+        <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+      </div>
 
+      <form>
+        <fieldset>
+          <legend>Personal details</legend>
 
-    <h1>Want to go to Mars?</h1>
-    <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+          <div class="grid">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" required>
+            </div>
 
-    Personal details
-    Name
-    Age
-    Email
-    Physical fitness
-    - Super-human
-    - Fit as a fiddle
-    - Not terribly strong
-    - A little couch-potato-y
+            <div class="">
+              <label for="age">Age</label>
+              <input id="age" name="age" required>
+            </div>
+
+            <div class="">
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" required>
+            </div>
+
+            <div>
+              <label for="fitness">Physical fitness</label>
+              <input type="hidden" name="_subject" value="Request to join the mission">
+              <select id="fitness" name="_fitness">
+                <option>Super-human</option>
+                <option>Fit as a fiddle</option>
+                <option>Not terribly strong</option>
+                <option>A little couch-potato-y</option>
+              </select>
+            </div>
+
+            <div class="">
+              <label for="address">Address</label>
+              <textarea id="address" name="address" required<textarea>
+            </div>
+
+          </div>
+        </fieldset>
+
     Address
 
     Mission statement
@@ -34,4 +65,9 @@
 
     Register for the trip!
 
-    Request to join the mission
+
+
+    </div>
+  </section>
+</body>
+</html>
